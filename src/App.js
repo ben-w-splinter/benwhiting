@@ -28,10 +28,10 @@ function App() {
           "This was a great project to practice the development of React applications and cs-in-js use."
       } imageURL = {"images/hodsonwedding.png"} projectURL={"https://hodsonwedding.com/"}/>
       <Project title={"Personal Site"} content = {
-          "This is the project you are viewing right now!" +
-          "The site was also created using React and a Firebase backend system. I use this site to display personal projects and develop my web development skills " +
+          "This is the project you are viewing right now! " +
+          "The site was also created using React and a Firebase backend system. I use this site to display personal projects and develop my web development skills. " +
           "This was also a great project to practice the development of React applications and have freedom of design choice."
-      } imageURL = {"images/hodsonwedding.png"} projectURL={"https://github.com/ben-w-splinter/benwhiting"}/>
+      } imageURL = {"images/profile.jpg"} projectURL={"https://github.com/ben-w-splinter/benwhiting"}/>
     </div>
   );
 }
