@@ -1,15 +1,13 @@
 import styled from "styled-components"
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.div`
     display: flex;
-    flex-direction: rows;
     text-align: center;
-    margin: 3rem;
+    margin: 2rem;
 
     img{
         width: 25%;
         height: auto;
-        margin: 1rem;
         border-radius: 25px;
     }
 
@@ -19,14 +17,12 @@ export const StyledHeader = styled.header`
         align-items: center;
         border-radius: 25px;
         background-color: var(--colorPrimary);
-        padding: 1rem;
-        margin: 1rem;
+        margin-left: 1rem;
         width: 100%;
     }
 
     .description-wrapper div{
         border: 1px solid white;
-        margin: 1rem;
     }
 
     h1{
@@ -40,10 +36,26 @@ export const StyledHeader = styled.header`
     }
 
     @media screen and (max-width:1000px){
-        flex-direction: column;
 
         img{
-            width: 100%;
+            width: 25%;
         }
+
+        .description{
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width:800px){
+            flex-direction: column;
+            align-items:center;
+    
+            img{
+                margin-left: 0;
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+        
     }
 `

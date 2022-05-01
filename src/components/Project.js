@@ -10,7 +10,7 @@ export const Project = ({title, content, imageURL, projectURL}) => {
     return (
         <StyledProject>
             <img src={imageURL} alt = ''/>
-            <ReactCardFlip className = 'card' isFlipped = {isFlipped} flipDirection = 'vertical'>
+            <ReactCardFlip containerStyle={{width: '100%'}} isFlipped = {isFlipped} flipDirection = 'vertical'>
                 <div className='content' onClick={handleClick}>
                     <div>
                     <h1>{title}</h1>

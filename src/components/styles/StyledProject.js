@@ -5,24 +5,19 @@ export const StyledProject = styled.div`
     margin: 2rem;
 
     img{
-        width: 20vw;
+        width: 25%;
         height: auto;
         border-radius: 25px;
-    }
-
-    .card{
-        width: 100%;
+        margin-right: 1rem;
     }
 
     .content{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 2rem;
         border-radius: 25px;
         background: white;
         height: 100%;
-        width: calc(80vw - 6rem);
     }
 
     div{
@@ -55,11 +50,22 @@ export const StyledProject = styled.div`
         color: white;
     }
 
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:500px){
         flex-direction: column;
+        align-items:center;
 
         img{
-            width: 100%;
+            margin-left: 0;
+            margin-bottom: 1rem;
+            width: 50%;
         }
+
+        .content{
+            height: 50vh;
+        }
+        .content p{
+            font-size: 1rem;
+        }
+
     }
 `

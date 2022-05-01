@@ -5,24 +5,19 @@ export const StyledCard = styled.div`
     margin: 2rem;
 
     img{
-        width: 20vw;
+        width: 25%;
+        margin-left: 1rem;
         height: auto;
         border-radius: 25px;
-    }
-
-    .card{
-        width: 100%;
     }
 
     .content{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
         border-radius: 25px;
-        background: white;
         height: 100%;
-        width: calc(80vw - 6rem);
+        background: white;
     }
 
     div{
@@ -42,11 +37,23 @@ export const StyledCard = styled.div`
         width: 100%;
     }
 
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:500px){
         flex-direction: column;
+        align-items:center;
 
         img{
-            width: 100%;
+            margin-left: 0;
+            margin-top: 1rem;
+            width: 50%;
         }
+
+        .content{
+            height: 50vh;
+        }
+
+        .content p{
+            font-size: 1.2rem;
+        }
+
     }
 `

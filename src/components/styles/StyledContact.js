@@ -32,4 +32,13 @@ export const StyledContact = styled.form`
         background-color: var(--colorPrimary);
         color: white;
     }
+
+    @media screen and (max-width:500px){
+        input[type='text'], input[type='email'], textarea{
+            width: 50%;
+        }
+        button{
+            width: 50%;
+        }
+    }
 `
