@@ -48,7 +48,7 @@ export const StyledCard = styled.div`
         }
 
         .content{
-            height: 50vh;
+            height: 60vh;
         }
 
         .content p{
