@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavBar } from './NavBar'
 import { StyledHeader } from './styles/Header.styled'
 
 export const Header = () => {
@@ -8,8 +9,10 @@ export const Header = () => {
             <div className='description'>
                 <div className='description-wrapper'>
                     <h1>Ben Whiting</h1>
-                    <div/>
+                    <div className='divider'/>
                     <h2>Software Developer</h2>
+                    <div className='divider'/>
+                    <NavBar/>
                 </div>
             </div>
         </StyledHeader>

@@ -33,6 +33,11 @@ export const StyledContact = styled.form`
         color: white;
     }
 
+    .alert{
+        background-color:green;
+        padding: 1rem;
+    }
+
     @media screen and (max-width:500px){
         input[type='text'], input[type='email'], textarea{
             width: 50%;
@@ -40,5 +45,4 @@ export const StyledContact = styled.form`
         button{
             width: 50%;
         }
-    }
 `

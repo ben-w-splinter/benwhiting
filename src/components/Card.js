@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {StyledCard} from './styles/StyledCard'
 import ReactCardFlip from 'react-card-flip'
 
-export const Card = ({title, content, imageurl}) => {
+export const Card = ({title, content, imageURL}) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const handleClick = () => {
         setIsFlipped(!isFlipped)
@@ -20,7 +20,7 @@ export const Card = ({title, content, imageurl}) => {
                     <p>{content}</p>
                 </div>
             </ReactCardFlip>
-            <img src={imageurl} alt = ''/>
+            <img src={imageURL} alt = ''/>
         </StyledCard>
     )
 }

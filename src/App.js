@@ -1,9 +1,9 @@
-import './App.css';
-import { Header } from './components/Header';
-import { Card } from './components/Card';
-import { Title } from './components/Title';
-import { Project } from './components/Project';
-import { Contact } from './components/Contact';
+import './App.css'
+import { Header } from './components/Header'
+import { Card } from './components/Card'
+import { Title } from './components/Title'
+import { Project } from './components/Project'
+import { Contact } from './components/Contact'
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         "I have worked on many software programs as part of school, university and personal projects. " + 
         "I find Computer Science fascinating due to its balance of rules and expression of creativity, as well as its enormous impact on our society (both negative and positive). " + 
         "In the future, I hope to work on front-end and applications development to fulfil my 13 year-old dream. "
-      } imageurl = "images/uni.jpg"/>
+      } imageURL = "images/uni.jpg"/>
       <Title title = 'Personal Projects'/>
       <Project title={"Splinter"} content = {
         "Splinter is a mobile messaging application created in python using Kivy and KivyMd for user interface design." + 

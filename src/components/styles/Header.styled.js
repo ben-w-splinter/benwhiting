@@ -21,9 +21,11 @@ export const StyledHeader = styled.div`
         width: 100%;
     }
 
-    .description-wrapper div{
+    .divider{
         border: 1px solid white;
     }
+
+    
 
     h1{
         font-size: 5rem;
