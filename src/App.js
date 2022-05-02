@@ -10,12 +10,18 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <Title title={"About Me"}/>
       <Card title={"Hello World!"} content = {
         "I am currently a student at Lancaster University studying Computer Science. I have had a passion for application development and software design since the age of 13. " +
         "I have worked on many software programs as part of school, university and personal projects. " + 
         "I find Computer Science fascinating due to its balance of rules and expression of creativity, as well as its enormous impact on our society (both negative and positive). " + 
         "In the future, I hope to work on front-end and applications development to fulfil my 13 year-old dream. "
       } imageURL = "images/uni.jpg"/>
+      <Card title={"Hobbies and Interests"} content = {
+        "In 2020, I built my first PC. It was a great experience to learn about the internal components of a computer and sparked my interest for PC gaming. " +
+        "It also revealed the large community of content creators for PC games and inspired me to learn and contribute to open source development. " +
+        "I still have this PC today and use it to play a wide variety of games and work on personal projects"
+      } imageURL = "images/computer.jpg"/>
       <Title title = 'Personal Projects'/>
       <Project title={"Splinter"} content = {
         "Splinter is a mobile messaging application created in python using Kivy and KivyMd for user interface design." + 
