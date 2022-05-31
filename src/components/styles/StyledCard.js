@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledCard = styled.div`
     border-radius: 25px;
     background: white;
-    transition: all 500ms ease;
+    height: 50vh;
 
     p, h1{
         padding: 1rem;
@@ -20,5 +20,6 @@ export const StyledCard = styled.div`
             font-size: 1.2rem;
         }
 
+        height: fit-content;
     }
 `

@@ -1,5 +1,4 @@
 import {useState, useRef, useEffect} from 'react'
-import { ThemeProvider } from 'styled-components'
 import { StyledFadeIn } from './styles/StyledFadeIn'
 
 export const FadeIn = (props) => {
@@ -13,12 +12,10 @@ export const FadeIn = (props) => {
         return () => observer.unobserve(domRef.current);
         }, []);
     return (
-        <ThemeProvider theme={props.theme}>
-            <StyledFadeIn>
-                <div className = {`fade-in-section ${visible ? 'visible' : ''}`} ref = {domRef}>
-                    {props.children}
-                </div>
-            </StyledFadeIn>
-        </ThemeProvider>
+        <StyledFadeIn>
+            <div className = {`fade-in-section ${visible ? 'visible' : ''}`} ref = {domRef}>
+                {props.children}
+            </div>
+        </StyledFadeIn>
     )
 }

@@ -2,8 +2,6 @@ import styled from 'styled-components'
 
 export const StyledFadeIn = styled.div`
     .fade-in-section{
-        ${props => props.theme.display}
-        margin: 2rem;
         opacity: 0;
         transform: translateY(20vh);
         visibility: hidden;
@@ -15,11 +13,5 @@ export const StyledFadeIn = styled.div`
         opacity: 1;
         transform: none;
         visibility: visible;
-    }
-
-    @media screen and (max-width:1000px){
-        .fade-in-section{
-            ${props => props.theme.mobile}
-        }
     }
 `
