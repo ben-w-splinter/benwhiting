@@ -1,31 +1,34 @@
 import styled from "styled-components"
 
-export const StyledHeader = styled.div`
+export const StyledHeader = styled.section`
     display: flex;
     text-align: center;
-    margin: 2rem;
+    height: 100vh;
 
     img{
-        width: 25%;
+        width: 15%;
         height: auto;
         border-radius: 25px;
     }
 
     .description{
         display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 25px;
-        background-color: var(--colorPrimary);
-        margin-left: 1rem;
         width: 100%;
+    }
+
+    .description h1{
+        padding: 0;
     }
 
     .divider{
         border: 1px solid white;
+        margin: 1rem;
+        width: 20%;
     }
-
-    
 
     h1{
         font-size: 5rem;
@@ -37,6 +40,12 @@ export const StyledHeader = styled.div`
         color: white;
     }
 
+    .downArrow{
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
     @media screen and (max-width:1000px){
 
         img{
@@ -46,17 +55,6 @@ export const StyledHeader = styled.div`
         .description{
             margin-left: 0;
             margin-top: 1rem;
-        }
-
-        @media screen and (max-width:800px){
-            flex-direction: column;
-            align-items:center;
-    
-            img{
-                margin-left: 0;
-                margin-top: 1rem;
-                width: 100%;
-            }
         }
         
     }

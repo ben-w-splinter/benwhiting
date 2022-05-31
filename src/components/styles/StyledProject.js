@@ -55,9 +55,9 @@ export const StyledProject = styled.div`
         align-items:center;
 
         img{
-            margin-left: 0;
+            margin-right: 0;
             margin-bottom: 1rem;
-            width: 50%;
+            width: 100%;
         }
 
         .content{

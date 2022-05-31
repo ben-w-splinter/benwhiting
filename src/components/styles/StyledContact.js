@@ -36,6 +36,7 @@ export const StyledContact = styled.form`
     .alert{
         background-color:green;
         padding: 1rem;
+        border-radius: 25px;
     }
 
     @media screen and (max-width:500px){

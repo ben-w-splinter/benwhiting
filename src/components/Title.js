@@ -3,6 +3,6 @@ import { StyledTitle } from './styles/StyledTitle'
 
 export const Title = ({title}) => {
   return (
-    <StyledTitle>{title}</StyledTitle>
+    <StyledTitle id = {title}>{title}</StyledTitle>
   )
 }
