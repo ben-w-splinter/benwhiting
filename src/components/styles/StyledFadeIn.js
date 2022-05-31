@@ -18,8 +18,8 @@ export const StyledFadeIn = styled.div`
     }
 
     @media screen and (max-width:1000px){
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        .fade-in-section{
+            ${props => props.theme.mobile}
+        }
     }
 `

@@ -3,7 +3,7 @@ import { FadeIn } from './FadeIn'
 
 export const AboutMe = () => {
     return (
-        <FadeIn theme = {{display: "display: grid; grid-template-columns: repeat(3,1fr); column-gap: 2rem;"}}>
+        <FadeIn theme = {{display: "display: grid; grid-template-columns: repeat(3,1fr); column-gap: 2rem;", mobile: "display: flex; flex-direction: column; gap: 2rem;"}}>
                 <Card title={"Hello World!"} content = {
                     "I am currently a student at Lancaster University studying Computer Science. I have had a passion for application development and software design since the age of 13. " +
                     "I have worked on many software programs as part of school, university and personal projects. " + 
